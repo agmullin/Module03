@@ -1,11 +1,11 @@
 body {
   font-family: 'Times New Roman', Times, serif;
-  margin: 0;
+  margin: 20px; /* Add some margin to the overall page */
   padding: 0;
   background-image: url('WidgetCoLogo.gif');
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: contain;
+  background-size: auto; 
 }
 
 header {
@@ -21,7 +21,7 @@ header {
 aside {
   text-align: right;
   float: right;
-  width: 200px;
+  width: auto; /* Adjust width to prevent text wrapping */
   padding: 10px;
   border-right: 15px solid rgb(66, 50, 82); 
   margin: 20px;
@@ -31,12 +31,14 @@ aside {
 h1 {
   text-align: left;
   font-size: 2em;
-  margin: 20px 0;
-  font-weight: bold; /* Make the title bold */
+  margin: 0; /* Remove margin to eliminate gap */
+  padding-right: 15px; /* Add padding for the right border */
+  float: left; /* Float h1 to the left of the "press contact" */
+  font-weight: bold;
 }
 
 article {
-  margin: 20px;
+  margin: 40px; /* Increase margin to give wider space */
   padding: 20px;
 }
 
@@ -44,21 +46,22 @@ h2 {
   text-align: center;
   font-size: 1.5em;
   margin: 20px 0;
-  font-style: italic; /* Italicize the heading */
+  font-style: italic;
 }
 
 p {
   text-align: justify;
   line-height: 1.6;
-  text-align: justify;
+  margin: 0 40px; /* Add wider margins to p */
 }
 
 section {
   margin: 20px 0;
   padding: 10px;
-  border: 4px solid green; 
+  border: 4px solid rgb(248, 115, 37); 
   border-left-width: 40px; 
-  border-radius: 5px;
+  border-radius: 0x;
+  background-color: rgb(255, 242, 223); /* Add background color to section */
 }
 
 footer {
@@ -72,4 +75,5 @@ footer {
 }
 
 footer a { 
-color: gray; /* Change footer link to gray */ }
+  color: gray;
+}
